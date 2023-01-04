@@ -1,6 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 #content {
+
     text-align: center;
     min-width: 100vh;
+    background: rgb(205,251,63);
+    background: radial-gradient(circle, rgba(205,251,63,1) 0%, rgba(16,168,45,0.9976905311778291) 100%);
 }
 
 img {
