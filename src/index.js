@@ -1,1 +1,3 @@
-console.log("testing once more, and again");
+import * as module from "./on-page-load.js"
+
+module.onPageLoad();
