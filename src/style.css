@@ -100,3 +100,13 @@ li:hover>img {
     object-fit: cover;
     
 }
+
+.dishBox:nth-of-type(2),
+.dishBox:nth-of-type(3) {
+    border-top: none;
+}
+
+.infoContainer {
+    font-size: 1.2rem;
+    margin-top: 1.5em;
+}
