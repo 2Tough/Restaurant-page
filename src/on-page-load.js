@@ -25,5 +25,33 @@ export function onPageLoad() {
     middleParagraph.classList.add("middle--paragraph");
     middleParagraph.textContent = "Our cuisine is international. We're picked the most influencial and important aspects of each country to create grandiose dishes. Please check out our menu!";
     contentDiv.appendChild(middleParagraph);
+    
+    //Bottom images
+
+    const imageMainOne = document.createElement("img");
+    imageMainOne.classList.add("imageHome");
+    imageMainOne.classList.add("pepe-cooking");
+    imageMainOne.src = "../src/assets/pepe-cooking-soup.webp";
+    imageMainOne.alt = "Pepe chef cooking soup.";
+
+    const imageMainTwo = document.createElement("img");
+    imageMainTwo.classList.add("imageHome");
+    imageMainTwo.src = "../src/assets/pepe-happy.gif";
+    imageMainTwo.alt = "Pepe chef happy.";
+
+    const imageMainThree = document.createElement("img");
+    imageMainThree.classList.add("imageHome");
+    imageMainThree.classList.add("pepe-comfy");
+    imageMainThree.src = "../src/assets/pepe-comfy.jpg";
+    imageMainThree.alt = "Comfy Pepe chef with lasagna.";
+
+
+
+    const mainImagesContainer = document.createElement("div");
+    mainImagesContainer.classList.add("imagesContainer");
+    mainImagesContainer.append(imageMainOne, imageMainTwo, imageMainThree);
+    contentDiv.appendChild(mainImagesContainer);
+
+
 }
 

@@ -97,7 +97,7 @@ li:hover>img {
 
 .dish--image {
     width: 50%;
-    object-fit: cover;
+    object-fit:contain;
     
 }
 
@@ -109,4 +109,41 @@ li:hover>img {
 .infoContainer {
     font-size: 1.2rem;
     margin-top: 1.5em;
+}
+
+.imagesContainer {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    border: black 2px solid;
+    border-left: none;
+    border-right: none;
+    height: 70%;
+
+}
+
+.pepe-comfy
+{
+  
+  position: relative;
+  transition: transform 0.3s ease;
+  transform: translateX(0px);
+  
+}
+.pepe-comfy:hover
+{
+ transform: translateX(200px);
+}
+
+.pepe-cooking
+{
+  
+  position: relative;
+  transition: transform 0.3s ease;
+  transform: translateX(0px);
+  
+}
+.pepe-cooking:hover
+{
+ transform: translateX(-200px);
 }
