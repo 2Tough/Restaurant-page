@@ -11,16 +11,62 @@
 body {
     margin: 0;
     padding: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+    background-color: beige;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5em 0;
+}
+
+li {
+    list-style-type: none;
+
 }
 
 #content {
 
     text-align: center;
-    min-width: 100vh;
+    min-height: 100vh;
     background: rgb(205,251,63);
     background: radial-gradient(circle, rgba(205,251,63,1) 0%, rgba(16,168,45,0.9976905311778291) 100%);
 }
 
 img {
     height: 250px;
+}
+
+.navbar--image {
+    display: none;
+    width: 35px;
+    height: auto;
+    margin-right: 5px;
+    
+}
+
+li:hover {
+    color: #2E5075;
+}
+
+li:hover>img {
+    display: inline-block;
+} 
+
+.one, .three {
+    width: 25px;
 }
