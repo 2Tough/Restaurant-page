@@ -39,6 +39,20 @@ li {
 
 }
 
+.content--heading {
+    font-size: 1.6rem;
+    padding: 2em 0;
+
+}
+
+.heading--paragraph, .middle--paragraph {
+    margin: 1em auto;
+    font-size: 1.4rem;
+
+    max-width: 75%;
+    font-weight: 500;
+}
+
 #content {
 
     text-align: center;
@@ -69,4 +83,20 @@ li:hover>img {
 
 .one, .three {
     width: 25px;
+}
+
+.dishBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: black solid 4px;
+    width: 75%;
+    margin: 0 auto;
+    
+}
+
+.dish--image {
+    width: 50%;
+    object-fit: cover;
+    
 }
