@@ -88,9 +88,19 @@ li:hover>img {
     width: 25px;
 }
 
+/* Menu */
+
+.dishTextBox {
+    width: 75%;
+    
+}
+
 .dishBox {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    align-content: center;
+    justify-items: center;
     align-items: center;
     border: black solid 4px;
     width: 75%;
@@ -99,9 +109,13 @@ li:hover>img {
 }
 
 .dish--image {
-    width: 50%;
-    object-fit:contain;
     
+    width: auto;
+    height: auto;
+    max-width: 65%;
+    
+    
+    object-fit: contain;
 }
 
 .dishBox:nth-of-type(2),
