@@ -23,7 +23,10 @@ body {
 }
 
 header {
+    position: fixed;
     background-color: beige;
+    width: 100%;
+    top:0;
 }
 
 .navbar {
@@ -41,7 +44,7 @@ li {
 
 .content--heading {
     font-size: 1.6rem;
-    padding: 2em 0;
+    padding: 4em 0 2em 0;
 
 }
 
@@ -107,9 +110,18 @@ li:hover>img {
 }
 
 .infoContainer {
-    font-size: 1.2rem;
-    margin-top: 1.5em;
+    margin-top: 5em;
 }
+
+.contactTitle {
+    font-size: 2em;
+}
+
+.contactText {
+    font-size: 1.5;
+}
+
+/* Bottom images */
 
 .imagesContainer {
     display: flex;
@@ -122,28 +134,93 @@ li:hover>img {
 
 }
 
-.pepe-comfy
-{
-  
-  position: relative;
-  transition: transform 0.3s ease;
-  transform: translateX(0px);
-  
-}
-.pepe-comfy:hover
-{
- transform: translateX(200px);
+.pepe-comfy {
+    position: relative;
+    transition: transform 0.3s ease;
+    transform: translateX(0px);
 }
 
-.pepe-cooking
-{
-  
-  position: relative;
-  transition: transform 0.3s ease;
-  transform: translateX(0px);
-  
+.pepe-comfy:hover {
+    transform: translateX(200px);
 }
-.pepe-cooking:hover
-{
- transform: translateX(-200px);
+
+.pepe-cooking {
+    position: relative;
+    transition: transform 0.3s ease;
+    transform: translateX(0px);
+    z-index: +2;
+}
+
+.pepe-cooking:hover {
+    transform: translateX(-200px);
+}
+
+.imageText {
+    font-size: 1.2rem;
+    position: fixed;
+    right: 30%;
+    
+    
+}
+
+.imageTextLeft {
+    font-size: 1.2rem;
+    position: fixed;
+    left: 30%;
+    z-index: +1;
+    
+}
+
+
+
+@media (max-width: 1200px) {
+    .imageText {
+        right: 15%;
+    }
+
+    .pepe-cooking {
+        left: 15%;
+    }
+
+    .imagesContainer img {
+        min-width: 10%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1000px) {
+    .imageText {
+        right: 10%;
+    }
+
+    .pepe-cooking {
+        left: 10%;
+    }
+}
+
+@media (max-width: 900px) {
+    .imageText {
+        right: 15%;
+    }
+    .pepe-cooking {
+        left: 15%;
+    }
+} 
+
+@media (max-width: 700px) {
+    .imageText {
+        right: 20%;
+    }
+    .pepe-cooking {
+        left: 20%;
+    }
+} 
+
+@media (max-width: 500px) {
+    .imageText {
+        right: 11%;
+    }
+    .pepe-cooking {
+        left: 11%;
+    }
 }

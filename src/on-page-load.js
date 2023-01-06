@@ -45,12 +45,22 @@ export function onPageLoad() {
     imageMainThree.src = "../src/assets/pepe-comfy.jpg";
     imageMainThree.alt = "Comfy Pepe chef with lasagna.";
 
+    const bottomTextRight = document.createElement("p");
+    bottomTextRight.classList.add("imageText");
+    bottomTextRight.textContent = "Comfy food."
 
+    const bottomTextLeft = document.createElement("p");
+    bottomTextLeft.classList.add("imageTextLeft");
+    bottomTextLeft.textContent = "Exquisite food."
 
     const mainImagesContainer = document.createElement("div");
     mainImagesContainer.classList.add("imagesContainer");
-    mainImagesContainer.append(imageMainOne, imageMainTwo, imageMainThree);
+    mainImagesContainer.append(imageMainOne, bottomTextLeft, imageMainTwo, bottomTextRight, imageMainThree );
     contentDiv.appendChild(mainImagesContainer);
+
+
+    
+
 
 
 }
